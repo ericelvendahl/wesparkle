@@ -1,0 +1,56 @@
+
+.benefits.container {
+    width: 350px;
+    margin-bottom: 3em;
+}
+
+.support.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.support.image-box {
+    width: 50vw;
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 600px;
+}
+
+.support.description {
+    max-width: var(--default-width);
+    color: var(--battleship-grey);
+    font-weight: 100;
+    margin-bottom: 3em;
+}
+
+.paragraph {
+    line-height: 1.5em;
+    width: 350px;
+}
+
+.link-to-main.container {
+    margin: 2em 0 1em 0;
+}
+
+.image-1 {
+    background-image: url('/images/bigPhone.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image-2 {
+    background-image: url('/images/circle.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image-3 {
+    background-image: url('/images/armUp.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

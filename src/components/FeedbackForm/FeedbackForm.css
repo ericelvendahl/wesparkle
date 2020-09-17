@@ -1,0 +1,20 @@
+
+.feedback-input {
+    width: var(--default-width);
+    font-family: var(--fonts);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.4em;
+}
+
+.feedback.text-area {
+    min-height: 200px;
+}
+
+.feedbackButton {
+    width: var(--default-width);
+}
+
+#sign-in-spacer {
+    width: 0.75em;
+}

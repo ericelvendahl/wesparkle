@@ -1,0 +1,352 @@
+/* global font family */
+body {
+    font-family: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* global color variables and font repeated */
+.root {
+    --battleship-grey: #888787ff;
+    --white: #ffffffff;
+    --vermilion: #da291cff;
+    --midnight-blue: #0c1466ff;
+    --default-width: 370px;
+    --fonts: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --roundtangle: 4px;
+    background-color: var(--white);
+    color: var(--midnight-blue);
+}
+
+.alert {
+    background-color: var(--vermilion);
+    margin: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--midnight-blue);
+    color: var(--white);
+    width: 30%;
+    height: 100%;
+    width: var(--default-width);
+    margin: .2em;
+    border-radius: var(--roundtangle);
+}
+
+input {
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    width: var(--default-width);
+    text-align: center;
+    font-size: 1.6em;
+    margin: 0 0 0.5em 0;
+}
+
+#landingHeader {
+    margin-bottom: 1em;
+}
+
+.log-in, .log-out, .register {
+  background-color: var(--vermilion);
+  border-radius: var(--roundtangle);
+  color: var(--white);
+  font-weight: 800;
+  min-height: 50px;
+  min-width: 100px;
+  outline:0;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1em;
+  /* be rid of this 3-D input button */
+  appearance: none;
+  border: 1px solid var(--battleship-grey);
+}
+
+.log-in:hover, .log-out:hover, .register:hover {
+  background-color: var(--white);
+  color: var(--vermilion);
+}
+
+/* This line makes the "Register" and "Login" buttons look like links */
+.link-button {
+    background:none;
+    color:inherit;
+    border:none;
+    padding:0;
+    font: inherit;
+    outline:0;
+    border-bottom:1px solid var(--battleship-grey); 
+    cursor: pointer;
+}
+
+.shortener.container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.image-title {
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    width: var(--default-width);
+}
+.image-box {
+    width: 50vw;
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 600px;
+}
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+}
+/* for an image use this.. */
+/* .image {
+    background-image: url('/images/.imageName.jpg');
+} */
+
+
+.text-field {
+    margin: inherit;
+    color: var(--battleship-grey);
+    background-color: var(--white);
+    width: var(--default-width);
+    border-radius: var(--roundtangle);
+}
+/* linkListItem */
+.link-list {
+    background-color: var(--midnight-blue);
+}
+.link-item.container {
+    background-color: var(--white);
+    width: calc(var(--default-width) - 4em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+    border: 1px solid var(--battleship-grey);
+    border-radius: var(--roundtangle);
+    margin-bottom: 2em;
+}
+.link-item.button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-items {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+/* linkShortener */
+.container.link-shortener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    min-height: 600px;
+    width: 400px;
+}
+.landing {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userHeader {
+    color: var(--white);
+    margin: 1.5em 0 1em 0;
+}
+
+.container.login-button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.two-em {
+    margin-bottom: 2em;
+}
+/* buttons */
+#advanced {
+    color: var(--vermilion);
+    background-color: var(--white);
+    font-weight: 800;
+    height: 50px;
+}
+#advanced:hover {
+    background-color: var(--vermilion);
+    color: var(--white);
+}
+
+#generate {
+    color: var(--white);
+    background-color: var(--vermilion);
+    font-weight: 600;
+    margin-bottom: 2.5em;
+}
+#generate:hover {
+    box-shadow: inset 0 0 0 2em var(--midnight-blue);
+    font-weight: 800;
+    border-color: var(--midnight-blue);
+}
+
+#copy {
+    color: var(--white);
+    background-color: var(--midnight-blue);
+}
+#copy:hover {
+    color: var(--midnight-blue);
+    background-color: var(--white);
+    font-weight: 800;
+}
+
+#edit {
+    background-color: var(--white);
+    color: var(--midnight-blue);
+}
+#edit:hover {
+    background-color: green;
+    color: var(--white);
+    font-weight: 800;
+}
+#filter {
+    background-color: var(--white);
+    color: var(--midnight-blue);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#filter:hover {
+    background-color: green;
+    color: var(--white);
+    font-weight: 800;
+}
+
+#back {
+    background-color: var(--white);
+    color: var(--midnight-blue);
+    position: fixed;
+    bottom: 0;
+    left: 0.75em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    z-index: 1;
+}
+#back:hover {
+    background-color: var(--midnight-blue);
+    color: var(--white);
+}
+
+#save {
+    background-color: var(--white);
+    color: green;
+}
+#save:hover {
+    background-color: green;
+    color: var(--white);
+    font-weight: 800;
+}
+.save {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#delete {
+    color: var(--vermilion);
+    background-color: var(--white);
+    
+}
+#delete:hover {
+    background-color: var(--vermilion);
+    color: var(--white);
+    font-weight: 800;
+}
+
+.big {
+    width: var(--default-width);
+}
+
+.qr {
+    margin-top: 40px;
+}
+.qr-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-area {
+    width: 337px;
+    border-color: rgb(189, 189, 189);
+    border-radius: var(--roundtangle);
+    height: 20px;
+    font-family: var(--fonts);
+    margin-top: 2px;
+    margin-bottom: 8px;
+    resize: none;
+    padding: 15px;
+    font-size: 14pt;
+}
+
+/* history of shortened links */
+.item-text {
+    color: var(--battleship-grey);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* phones will only break chars with word-wrap - this one has to come first */
+    word-wrap: break-word;
+    /* but desktop will only break chars with overflow-wrap */
+    overflow-wrap: anywhere;
+}
+.item-title {
+    text-transform: uppercase;
+    color: var(--vermilion);
+    font-size: 17px;
+}
+.item-link {
+    margin-bottom: 1.5em;
+    width: 306px;
+}
+.item-link:hover {
+    font-weight: 600;
+    color: var(--vermilion);
+}
+
+.link-item.graph {
+    height: 550px;
+}
+
+.link-item.details {
+    height: 350px;
+}
+
+.link-item.button.save {
+    width: 100%;
+    height: 50px;
+}
+
+.link-copied {
+    margin-top: 1em;
+}

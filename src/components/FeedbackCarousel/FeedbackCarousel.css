@@ -1,0 +1,24 @@
+/* react-responsive-carousel css */
+.carousel .slide {
+    background: var(--vermilion);
+    color: white;
+}
+
+.carousel-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* we sparkle css */
+.feedbackCarousel {
+    margin: 10%;
+    width: 100vw;
+    margin: 10% 10% 5em 10%;
+}
+
+.feedbackCarousel p {
+    padding: 2em;
+    font-size: 1.25em;
+}
